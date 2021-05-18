@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Name that Wrestler?</title>
+    <header class="header">
+        <h1>Name That Wrestler?</h1>
+    </header>
+</head>
+
+<div class="parentflex">
+    <style>
+        body {
+            background-image: url('quizpics/ring.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+    </style>
+    <div class="container">
+        <div id="question-container" class="hide">
+            <div id="questions">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                 <button class="btn">Answer 2</button>
+                 <button class="btn">Answer 3</button>
+                  <button class="btn">Answer 4</button>
+            </div>
+        </div>
+        <div class="controls">
+        <button id="start-btn" class="start-btn btn"><img src="quizpics/bell.png" alt="bell" width="60"
+            height="60">Ring the Bell!<img src="quizpics/bell.png" alt="bell" width="60" height="60"></button>
+        <button id="next-btn" class="next-btn btn hide">NEXT</button>
+        </div>
+    </div>
+    <script src="assets/js/question.js"></script>
+    <script src="assets/js/script.js"></script>
+</div>
+
+</html>
