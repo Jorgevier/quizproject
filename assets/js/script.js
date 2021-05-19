@@ -25,9 +25,20 @@ function playGame(){
 function showQuestion(questions){
     var currentQuestion = questions[currentQuestionIndex];
     var currentChoices = questions[currentQuestionIndex];
+
     questionElement.textContent = currentQuestion.title;
-    answerElement.innerText = currntChoices.choices;
+    document.getElementById('btn1').innerText = currentChoices.choices[0];
+    document.getElementById('btn2').innerText = currentChoices.choices[1];
+    document.getElementById('btn3').innerText = currentChoices.choices[2];
+    document.getElementById('btn4').innerText = currentChoices.choices[3];
+    if (e.target.value === questions[currentQuestionIndex].answer){
+    }
+    else (){
+    feedbackEl.textContent = "Wrong!";
 }
+}
+button.addEventListener('click', showAnswer)
+
 
 
 function nextQuestion(questions){
@@ -40,6 +51,12 @@ function nextQuestion(questions){
 
 
 
-function pickAnswer(){
+function showAnswer(e) {
+    let selectedButton = e.target;
+    let correct = selectedButton.dataset.answer;
+    questions(document.body, correct)
+    Array.from(answerButtonElement.children).forEach(button => {
+        questions(button, button.dataset.correct)
+    })
 
 }
