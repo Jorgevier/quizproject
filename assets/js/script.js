@@ -24,32 +24,28 @@ function playGame(){
 }
 function showQuestion(questions){
     var currentQuestion = questions[currentQuestionIndex];
-    var currentChoices = questions[currentQuestionIndex];
+    var currentChoices = currentQuestion.choices;
+    var rightAnswer = currentQuestion.answer;    
+
+
 
     questionElement.textContent = currentQuestion.title;
-    document.getElementById('btn1').innerText = currentChoices.choices[0];
-    document.getElementById('btn2').innerText = currentChoices.choices[1];
-    document.getElementById('btn3').innerText = currentChoices.choices[2];
-    document.getElementById('btn4').innerText = currentChoices.choices[3];
-    if (e.target.value === questions[currentQuestionIndex].answer){
+    let choiceButtons = document.querySelectorAll(".btnPick");
+    //console.log(choiceButtons)
+
+    for(let i=0; i<choiceButtons.length; i++){
+        console.log(choiceButtons[i])
+        choiceButtons[i].textContent = currentChoices[i];
+        choiceButtons[i].addEventListener('click', showAnswer)
+        
     }
-    else (){
-    feedbackEl.textContent = "Wrong!";
+
+
+    // document.getElementById('btn1').innerText = currentChoices.choices[0];
+    // document.getElementById('btn2').innerText = currentChoices.choices[1];
+    // document.getElementById('btn3').innerText = currentChoices.choices[2];
+    // document.getElementById('btn4').innerText = currentChoices.choices[3];
 }
-}
-button.addEventListener('click', showAnswer)
-
-
-
-function nextQuestion(questions){
-    showQuestion(shuffleQuestions[currentQuestionIndex])
-}
-    
-   // var currentQuestion = questions[currentQuestionIndex];
-//questionTextEl.textContent = currentQuestion.title;
-//choicesEl.innerHTML = ""; //jhan
-
-
 
 function showAnswer(e) {
     let selectedButton = e.target;
@@ -58,5 +54,25 @@ function showAnswer(e) {
     Array.from(answerButtonElement.children).forEach(button => {
         questions(button, button.dataset.correct)
     })
+
+             
+
+
+function nextQuestion(){
+    //showQuestion(shuffleQuestions[currentQuestionIndex])
+}
+ 
+
+
+//var button1 = getElementById('btn1');
+
+//button1.addEventListener('click', showAnswer)
+
+   // var currentQuestion = questions[currentQuestionIndex];
+//questionTextEl.textContent = currentQuestion.title;
+//choicesEl.innerHTML = ""; //jhan
+
+
+
 
 }
