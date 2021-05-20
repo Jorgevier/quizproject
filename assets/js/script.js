@@ -49,14 +49,22 @@ function showQuestion(questions){
 
 function showAnswer(e) {
     let selectedButton = e.target;
-    let correct = selectedButton.dataset.answer;
-    questions(document.body, correct)
+    let correct = questions.answer;
+    selectedButton(document.body, correct)
+    console.log(e.target);
     Array.from(answerButtonElement.children).forEach(button => {
         questions(button, button.dataset.correct)
-    })
+        if (answer.correct) {
+            button.dataset.correct = answer.correct
+        }
+        }
+
+
+    
+    
 
              
-
+    )
 
 function nextQuestion(){
     //showQuestion(shuffleQuestions[currentQuestionIndex])
