@@ -47,15 +47,18 @@ function showQuestion(questions){
     // document.getElementById('btn4').innerText = currentChoices.choices[3];
 }
 
-function showAnswer(e) {
-    let selectedButton = e.target;
+function showAnswer() {
+    let selectButtton = questions.title;
     let correct = questions.answer;
-    selectedButton(document.body, correct)
-    console.log(e.target);
-    Array.from(answerButtonElement.children).forEach(button => {
-        questions(button, button.dataset.correct)
-        if (answer.correct) {
-            button.dataset.correct = answer.correct
+    
+    Array.from(answerElement.children).forEach(button => {
+        correct(button, button.dataset.correct)
+        console.log(showAnswer)
+
+        if (showAnswer) {
+       button.dataset.selectButtton = correct
+        } else {
+
         }
         }
 
