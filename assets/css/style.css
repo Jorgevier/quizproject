@@ -30,7 +30,7 @@ h1 {
 .container{
     width: 800px;
     max-width: 80%;
-    background-color: #faf4f4;
+    background-color: transparent;
     border-radius: 20px;
     padding: 5px;
     box-shadow: 0 0 10px 2px;
@@ -51,7 +51,14 @@ h1 {
     color: rgb(49, 97, 202);
     outline: none;
 }
-
+.hs{
+    color:red;
+}
+.wrapper {
+    color: red;
+    margin: 100px auto 0 auto;
+    max-width: 600px;
+  }
 .btn:hover{
     border-color: black;
 }
@@ -59,6 +66,7 @@ h1 {
     font-size: 45px;
     font-weight: bold;
     color: red;
+    text-shadow: 2px 2px 20px black;
     text-align: center;
 }
 .start-btn, .next-btn {
@@ -74,5 +82,32 @@ h1 {
 .hide {
     display: none;
 }
-
-
+.timer {
+    position: absolute;
+    color: white;
+    background-color: rgb(4, 4, 97);
+    font-size: 45px;
+    top: 10px;
+    right: 10px;
+  }
+#scores {
+    position: absolute;
+    font-size: 40px;
+    top: 10px;
+    left: 10px;
+  }
+  
+.feedback {
+    font-style: italic;
+    font-size: 120%;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: gray;
+    border-top: 2px solid #ccc;
+  }
+  a {
+    color: #f8f6f6;
+    background-color: rgb(4, 4, 97);
+    text-decoration-thickness: 5px;
+    transition: color 0.1s;
+  }

@@ -5,7 +5,8 @@ var questions = [
             "Brett Hart",
             "Sting",
             "Razor Ramon"],
-        answer: "Brett Hart"
+        answer: "Brett Hart",
+        img: "./quizpics/hart.jpeg",
     },
     {
         title: "Who is the peoples champ, you can smell what he is cooking and you better know your roll",
@@ -13,7 +14,8 @@ var questions = [
         "Kurt Angle",
         "Yokozuna",
         "Roman Reigns"],
-        answer: "The Rock"
+        answer: "The Rock",
+        img: "./quizpics/rock.jpeg",
     },
     {
         title: "Watch here he comes running like a freight train, made tassels cool and loved to paint his face",
@@ -21,7 +23,8 @@ var questions = [
             "Ric Rude",
             "Hercules",
             "Ultimate Warrior"],
-        answer: "Ultimate Warrior"
+        answer: "Ultimate Warrior",
+        img: "./quizpics/warrior.jpeg",
     },
     {
         title: "He loves to lie, cheat & steal, rode in lowriders and VIVA LA RASA!?",
@@ -29,7 +32,8 @@ var questions = [
             "Eddie Guerrero",
             "JBL",
             "HHH"],
-        answer: "Eddie Guerrero"
+        answer: "Eddie Guerrero",
+        img: "./quizpics/eddie.jpeg",
     },
     {
         title: "wooooooooo, what a jet flying, limo riding son of a gun",
@@ -37,7 +41,8 @@ var questions = [
             "Ric Flair",
             "Mongo McMichaels",
             "Sting"],
-        answer: "Ric Flair"
+        answer: "Ric Flair",
+        img: "./quizpics/flair.jpeg",
     },
     {
         title: "The Walking Deadman that wants you to Rest in Peace",
@@ -45,7 +50,8 @@ var questions = [
             "Kane",
             "Edge",
             "Undertaker"],
-        answer: "Undertaker"
+        answer: "Undertaker",
+        img: "./quizpics/undertaker.jpeg",
     },
     {
         title: "word life, you cant see him",
@@ -53,7 +59,8 @@ var questions = [
             "Randy Ortan",
             "John Cena",
             "HHH"],
-        answer: "John Cena"
+        answer: "John Cena",
+        img: "./quizpics/cena.jpeg",
     },
     {
         title: "what an Hell raiser, loves beer and follows the words of 316",
@@ -61,7 +68,8 @@ var questions = [
             "Vince McMahon",
             "The Miz",
             "Booker T"],
-        answer: "Stone Cold"
+        answer: "Stone Cold",
+        img: "./quizpics/austin.jpeg",
     },
     {
         title: "Ooooo yeah, this guy made you snap into a slim jim",
@@ -69,7 +77,8 @@ var questions = [
             "Ricky the dragon steamboat",
             "Tito Santana",
             "Macho Man"],
-        answer: "Macho Man"
+        answer: "Macho Man",
+        img: "./quizpics/machoman.jpeg",
     },
     {
         title: "Let me tell you something brother, he wore red & yellow and even went hollywood at one point?",
@@ -77,6 +86,7 @@ var questions = [
             "King Kong Bundy",
             "Mr.T",
             "Andre the Giant"],
-        answer: "Hulk Hogan"
+        answer: "Hulk Hogan",
+        img: "./quizpics/hogan.jpeg",
     }
 ];
